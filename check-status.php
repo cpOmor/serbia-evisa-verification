@@ -89,12 +89,9 @@ if ($mrzLine1 === '' && $mrzLine2 === '' && isset($rm['mrzLine'])) {
     $mrzLine1 = trim($parts[0] ?? '');
     $mrzLine2 = trim($parts[1] ?? '');
 }
+ 
+$photoUrl = 'https://visaguro.com/api/uploads/applicants/'  . rawurlencode($photo);
 
-// Photo path (relative from verification folder to evisa uploads)
-$photoUrl = '';
-if ($photo !== '') {
-    $photoUrl = '../evisa/api/uploads/applicants/' . rawurlencode($photo);
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
