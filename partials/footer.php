@@ -48,6 +48,13 @@
     text-decoration: none;
 }
 .imm-footer-link:hover { text-decoration: underline; }
+@media (max-width: 640px) {
+    .imm-footer { padding: 20px 16px; }
+    .imm-footer-inner { flex-direction: column; gap: 14px; align-items: flex-start; }
+    .imm-footer-info h2 { font-size: 20px !important; }
+    .imm-footer-info p { font-size: 15px !important; }
+    .imm-footer-text { font-size: 12px; }
+}
 </style>
 <footer class="imm-footer">
     <div class="imm-footer-inner">

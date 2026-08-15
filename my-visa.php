@@ -125,7 +125,8 @@ $fEvisa    = sev_h(trim((string)($_POST['evisa']    ?? '')));
         /* ── Page wrap ── */
         .page-wrap {
             flex: 1;
-            padding: 40px 120px 60px;
+            padding: 32px 20px;
+            max-width: 900px;
             margin: 0 auto;
             width: 100%;
         }
@@ -418,8 +419,12 @@ $fEvisa    = sev_h(trim((string)($_POST['evisa']    ?? '')));
         }
 
         @media (max-width: 640px) {
+            .page-wrap {
+                padding: 16px 10px;
+            }
+
             .track-card {
-                padding: 28px 20px 24px;
+                padding: 24px 16px 20px;
             }
 
             .field-group input {
@@ -437,20 +442,43 @@ $fEvisa    = sev_h(trim((string)($_POST['evisa']    ?? '')));
             }
 
             .app-row {
-                flex-direction: column;
+                flex-direction: column-reverse;
+                gap: 14px;
             }
 
             .app-photo-wrap {
                 width: 100%;
-                flex-direction: row;
+                justify-content: center;
+                margin-bottom: 8px;
+            }
+
+            .field-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
+                padding: 6px 0;
             }
 
             .f-lbl {
-                min-width: 160px;
+                min-width: 100%;
+                width: 100%;
+                font-size: 11px;
+            }
+
+            .f-val {
+                font-size: 13px;
             }
 
             .verified-banner {
                 flex-direction: column;
+                padding: 14px 16px;
+            }
+
+            .mrz-block {
+                font-size: 11px;
+                letter-spacing: 0;
+                overflow-x: auto;
+                word-break: break-all;
             }
         }
 

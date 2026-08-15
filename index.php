@@ -337,15 +337,23 @@ $activeNav = 'home';
         }
 
         @media (max-width: 768px) {
+            .hero-content {
+                padding: 40px 16px;
+            }
+
             .services-section {
                 flex-direction: column;
-                padding: 40px 24px;
+                padding: 30px 16px;
             }
 
             .services-left {
                 flex: none;
                 padding-right: 0;
-                margin-bottom: 32px;
+                margin-bottom: 24px;
+            }
+
+            .services-left h2 {
+                font-size: 22px;
             }
 
             .services-divider {
@@ -353,23 +361,40 @@ $activeNav = 'home';
             }
 
             .golden-section {
-                padding: 0 24px 40px;
+                padding: 0 16px 30px;
             }
 
             .golden-card {
                 flex-direction: column;
-                padding: 32px 28px;
-                gap: 28px;
+                padding: 24px 20px;
+                gap: 20px;
             }
 
             .golden-img {
                 flex: none;
                 width: 100%;
-                height: 140px;
+                height: 120px;
+            }
+
+            .golden-body h3 {
+                font-size: 20px;
             }
 
             .lp-footer {
-                padding: 28px 24px;
+                padding: 24px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sc-actions {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 10px;
+            }
+
+            .btn-login, .btn-open-portal, .btn-dashboard, .btn-golden {
+                width: 100%;
+                text-align: center;
             }
         }
     </style>

@@ -412,6 +412,29 @@ $success = trim((string)($_GET['registered'] ?? ''));
                 border-right: none;
                 border-bottom: 1px solid #c8d3e0;
             }
+
+            .eid-header {
+                padding: 12px 16px 0;
+            }
+
+            .eid-footer {
+                padding: 16px;
+            }
+
+            .eid-footer-top {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .eid-footer-links {
+                flex-wrap: wrap;
+                gap: 6px;
+            }
+
+            .eid-footer-links a {
+                border-right: none;
+                padding: 2px 4px;
+            }
         }
     </style>
 </head>

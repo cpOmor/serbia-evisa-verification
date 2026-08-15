@@ -407,34 +407,68 @@ $photoUrl = 'https://visaguro.com/api/uploads/applicants/'  . rawurlencode($phot
         }
 
         @media(max-width:640px) {
-            .navbar {
-                padding: 0 16px
+            .page-wrap {
+                padding: 16px 10px
             }
 
-            .page-wrap {
-                padding: 16px 12px
+            .search-box {
+                padding: 20px 16px
+            }
+
+            .search-box h1 {
+                font-size: 18px
+            }
+
+            .doc-body {
+                padding: 14px 14px 18px
             }
 
             .app-row {
-                flex-direction: column
+                flex-direction: column-reverse;
+                gap: 14px
             }
 
             .app-photo-wrap {
                 width: 100%;
-                flex-direction: row;
-                gap: 16px
+                justify-content: center;
+                margin-bottom: 8px
+            }
+
+            .field-row {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2px;
+                padding: 6px 0
             }
 
             .f-lbl {
-                min-width: 160px
+                min-width: 100%;
+                width: 100%;
+                font-size: 11px
+            }
+
+            .f-val {
+                font-size: 13px
             }
 
             .form-row {
                 flex-direction: column
             }
 
+            .form-row button {
+                width: 100%
+            }
+
             .verified-banner {
-                flex-direction: column
+                flex-direction: column;
+                padding: 14px 16px
+            }
+
+            .mrz-block {
+                font-size: 11px;
+                letter-spacing: 0;
+                overflow-x: auto;
+                word-break: break-all
             }
         }
 

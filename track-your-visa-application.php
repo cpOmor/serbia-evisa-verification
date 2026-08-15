@@ -285,6 +285,40 @@ a { text-decoration: none; color: inherit; }
 .qr-wrap img { width: 130px; height: 130px; display: block; }
 .bottom-note { flex: 1; line-height: 1.7; color: #000; }
 .bottom-note .sr-text { font-weight: 700; margin-bottom: 4px; display: block; }
+@media screen and (max-width: 820px) {
+    .page {
+        width: 100%;
+        max-width: 100%;
+        padding: 16px 12px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .app-section {
+        flex-direction: column-reverse;
+        gap: 14px;
+    }
+    .app-photo {
+        width: 100%;
+        align-items: center;
+    }
+    .app-fields {
+        padding-right: 0;
+    }
+    .field-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+        padding: 4px 0;
+    }
+    .f-lbl {
+        width: 100%;
+    }
+    .bottom-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
 @media print {
     .imm-navbar-wrap, .screen-actions { display: none !important; }
     body { background: #fff; }

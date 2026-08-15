@@ -115,9 +115,15 @@ $_sev_userName = $_sev_loggedIn && function_exists('sev_auth_user_name') ? sev_a
 .imm-lang-divider { color: rgba(255,255,255,.2); font-size: 11px; padding: 0 1px; }
 @media (max-width: 640px) {
     .imm-navbar-top { height: auto; }
-    .imm-brand { padding: 10px 16px; }
-    .imm-navbar-right { padding: 0 14px; gap: 10px; }
-    .imm-navbar-bottom { padding: 0 8px 0 12px; }
+    .imm-brand { padding: 10px 14px; }
+    .imm-brand-icon { width: 95px; height: auto; margin-right: 4px; }
+    .imm-brand-icon img { width: 95px !important; }
+    .imm-navbar-right { padding: 0 12px; gap: 8px; }
+    .imm-nav-login-link { font-size: 13px; padding: 10px 4px; }
+    .imm-navbar-bottom { height: auto; flex-wrap: wrap; padding: 4px 10px; gap: 4px 10px; }
+    .imm-nav-links-left { flex-wrap: wrap; }
+    .imm-nav-links-left a { padding: 8px 10px; font-size: 12px; }
+    .imm-lang-bar { padding-right: 4px; }
     .imm-user-label { display: none; }
 }
 </style>

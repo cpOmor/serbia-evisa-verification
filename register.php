@@ -86,7 +86,12 @@ a{text-decoration:none;color:inherit}
 
 .site-footer{background:#1b2a45;border-top:4px solid #c8383a;padding:20px 32px;text-align:center;font-size:12px;color:#5a7a9a}
 
-@media(max-width:480px){.reg-card-body,.reg-card-header{padding:20px}}
+@media(max-width:540px){
+    .top-bar{padding:10px 16px;height:auto;flex-wrap:wrap;gap:8px;justify-content:space-between}
+    .top-bar-nav a{padding:4px 8px;font-size:11px}
+    .reg-page{padding:20px 12px}
+    .reg-card-body,.reg-card-header{padding:20px 16px}
+}
 </style>
 </head>
 <body>

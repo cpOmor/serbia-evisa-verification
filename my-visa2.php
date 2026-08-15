@@ -143,11 +143,19 @@ img{display:block;max-width:100%}
 .print-btn:hover{background:#155da0}
 
 @media(max-width:640px){
-    .app-row{flex-direction:column}
-    .app-photo-wrap{width:100%}
-    .f-lbl{min-width:140px}
+    .page-wrap{padding:16px 10px}
+    .search-box{padding:20px 16px}
     .form-row{flex-direction:column}
+    .form-row button{width:100%}
     .welcome-bar{flex-direction:column;align-items:flex-start}
+    .doc-body{padding:14px 14px 18px}
+    .app-row{flex-direction:column-reverse;gap:14px}
+    .app-photo-wrap{width:100%;justify-content:center;margin-bottom:8px}
+    .field-row{flex-direction:column;align-items:flex-start;gap:2px;padding:6px 0}
+    .f-lbl{min-width:100%;width:100%;font-size:11px}
+    .f-val{font-size:13px}
+    .verified-banner{flex-direction:column;padding:14px 16px}
+    .mrz-block{font-size:11px;letter-spacing:0;overflow-x:auto;word-break:break-all}
 }
 @media print{
     .page-wrap > :not(.doc-card):not(.verified-banner):not(.alert-ok){display:none!important}
